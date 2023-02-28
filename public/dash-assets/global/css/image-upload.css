@@ -1,0 +1,50 @@
+.avatar-upload {
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 250px;
+}
+.avatar-upload .avatar-edit {
+    position: absolute;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    top: 0;
+}
+.avatar-upload .avatar-edit input {
+    display: none;
+}
+.avatar-upload .avatar-edit input+label {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 0;
+    border: 1px solid transparent;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.12);
+    cursor: pointer;
+    font-weight: normal;
+    transition: all .2s ease-in-out;
+}
+.avatar-upload .avatar-preview {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border: 6px solid rgba(255,255,255,.2);
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.1);
+}
+.avatar-upload .avatar-preview>div {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.avatar-upload .avatar-edit input+label span {
+    width: 100%;
+    padding: 5px 0;
+    background: rgba(255,255,255,.5);
+    text-align: center;
+    display: block;
+    color: #a7a1a1;
+}

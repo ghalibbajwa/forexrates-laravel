@@ -1,0 +1,67 @@
+2022-06-14 18:49:21 pid:8914 Workerman[start.php] stopping ...
+2022-06-14 18:49:21 pid:8914 Workerman[start.php] has been stopped
+2022-06-14 18:54:16 pid:11660 Workerman[start.php] start in DEBUG mode
+2022-06-14 18:54:34 pid:11660 Workerman[start.php] stopping ...
+2022-06-14 18:54:34 pid:11660 Workerman[start.php] has been stopped
+2022-06-14 18:54:35 pid:11821 Workerman[start.php] start in DAEMON mode
+2022-06-14 18:55:03 pid:12005 Workerman[start.php] status 
+2022-06-14 19:00:27 pid:13437 Workerman[start.php] start in DEBUG mode
+2022-06-14 19:00:27 pid:13437 Workerman[start.php] already running
+2022-06-14 19:00:31 pid:13542 Workerman[start.php] stop 
+2022-06-14 19:00:31 pid:13542 Workerman[start.php] is stopping ...
+2022-06-14 19:00:31 pid:11823 Workerman[start.php] stopping ...
+2022-06-14 19:00:31 pid:11823 Workerman[start.php] has been stopped
+2022-06-14 19:00:31 pid:13542 Workerman[start.php] stop success
+2022-06-14 19:00:33 pid:13578 Workerman[start.php] start in DEBUG mode
+2022-06-14 19:00:45 pid:13578 Workerman[start.php] stopping ...
+2022-06-14 19:00:45 pid:13578 Workerman[start.php] has been stopped
+2022-06-14 19:00:46 pid:13776 Workerman[start.php] start in DEBUG mode
+2022-06-14 19:01:05 pid:13776 Workerman[start.php] stopping ...
+2022-06-14 19:01:05 pid:13776 Workerman[start.php] has been stopped
+2022-06-14 19:01:06 pid:13983 Workerman[start.php] start in DEBUG mode
+2022-06-14 19:01:06 pid:13984 Worker[13984] process terminated
+2022-06-14 19:01:07 pid:13985 Worker[13985] process terminated
+2022-06-14 19:01:07 pid:13986 Worker[13986] process terminated
+2022-06-14 19:01:07 pid:13990 Worker[13990] process terminated
+2022-06-14 19:01:07 pid:13992 Worker[13992] process terminated
+2022-06-14 19:01:07 pid:13998 Worker[13998] process terminated
+2022-06-14 19:01:07 pid:13999 Worker[13999] process terminated
+2022-06-14 19:01:07 pid:14000 Worker[14000] process terminated
+2022-06-14 19:01:07 pid:14001 Worker[14001] process terminated
+2022-06-14 19:01:07 pid:14002 Worker[14002] process terminated
+2022-06-14 19:01:07 pid:14003 Worker[14003] process terminated
+2022-06-14 19:01:10 pid:14004 Worker[14004] process terminated
+2022-06-14 19:01:10 pid:14050 Worker[14050] process terminated
+2022-06-14 19:01:10 pid:14051 Worker[14051] process terminated
+2022-06-14 19:01:10 pid:14052 Worker[14052] process terminated
+2022-06-14 19:01:10 pid:14053 Worker[14053] process terminated
+2022-06-14 19:01:10 pid:14054 Worker[14054] process terminated
+2022-06-14 19:01:10 pid:14055 Worker[14055] process terminated
+2022-06-14 19:01:10 pid:14056 Worker[14056] process terminated
+2022-06-14 19:01:10 pid:14057 Worker[14057] process terminated
+2022-06-14 19:01:10 pid:14058 Worker[14058] process terminated
+2022-06-14 19:01:10 pid:14059 Worker[14059] process terminated
+2022-06-14 19:01:15 pid:13983 Workerman[start.php] stopping ...
+2022-06-14 19:01:15 pid:13983 Workerman[start.php] has been stopped
+2022-06-14 19:01:16 pid:14147 Workerman[start.php] start in DEBUG mode
+2022-06-14 19:01:20 pid:14148 Worker[14148] process terminated
+2022-06-14 19:01:21 pid:14204 Worker[14204] process terminated
+2022-06-14 19:01:21 pid:14227 Worker[14227] process terminated
+2022-06-14 19:01:22 pid:14228 Worker[14228] process terminated
+2022-06-14 19:01:22 pid:14232 Worker[14232] process terminated
+2022-06-14 19:01:22 pid:14234 Worker[14234] process terminated
+2022-06-14 19:01:22 pid:14235 Worker[14235] process terminated
+2022-06-14 19:01:22 pid:14236 Worker[14236] process terminated
+2022-06-14 19:01:22 pid:14238 Worker[14238] process terminated
+2022-06-14 19:01:22 pid:14239 Worker[14239] process terminated
+2022-06-14 19:01:22 pid:14240 Worker[14240] process terminated
+2022-06-14 19:01:22 pid:14241 Worker[14241] process terminated
+2022-06-14 19:01:22 pid:14242 Worker[14242] process terminated
+2022-06-14 19:01:23 pid:14147 Workerman[start.php] stopping ...
+2022-06-14 19:01:23 pid:14147 Workerman[start.php] has been stopped
+2022-06-14 19:01:43 pid:14505 Workerman[start.php] start in DEBUG mode
+2022-06-14 19:09:52 pid:14505 Workerman[start.php] stopping ...
+2022-06-14 19:09:52 pid:14505 Workerman[start.php] has been stopped
+2022-06-14 19:09:53 pid:17456 Workerman[start.php] start in DEBUG mode
+2022-06-14 19:10:58 pid:17456 Workerman[start.php] stopping ...
+2022-06-14 19:10:58 pid:17456 Workerman[start.php] has been stopped
