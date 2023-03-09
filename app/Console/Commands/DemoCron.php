@@ -2,10 +2,12 @@
 
 namespace App\Console\Commands;
 
+use App\Http\Controllers\APILayer\internationalRatesController;
 use Illuminate\Console\Command;
 
 class DemoCron extends Command
 {
+   
     /**
      * The name and signature of the console command.
      *
@@ -36,8 +38,9 @@ class DemoCron extends Command
      * @return mixed
      */
     public function handle()
-    {
-        \Log::info("Cron is working fine!");
+    {   $rates=new internationalRatesController;
+        $rates->get_rates();
+        \Log::info("rates added");
         //
     }
 }

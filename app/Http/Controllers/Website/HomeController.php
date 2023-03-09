@@ -97,7 +97,9 @@ class HomeController extends Controller
     
     public function International_forex_rate(Request $request)
     {
-        $date= \Carbon\Carbon::now();
+       
+        // $date= \Carbon\Carbon::now();
+        $date =new \Carbon\Carbon('2022-11-26 12:16:06');
         if ($request->mydate) {
             $date=$request->mydate;
             //return $data;
@@ -106,20 +108,23 @@ class HomeController extends Controller
         if($request->base_currency){
             $base_currency = $request->base_currency; 
         }
+       
         //return $base_currency;
         $base_currency_rate = InternationalRate::where('Symbol',$base_currency)->whereDate('created_at',$date)->first();
         
         
         $usd_currency_rate = InternationalRate::where('Symbol','USD')->whereDate('created_at',$date)->first();
+       
         $data=[
             'dates'=>DB::select('SELECT DATE_FORMAT(MAX(created_at), "%Y-%m-%d")maxdate,DATE_FORMAT(MIN(created_at), "%Y-%m-%d") mindate FROM international_rates;'),
             'iratesmajor'=>  DB::table('international_rates')->where('type', '=', 'major')->whereDate('created_at',$date)->take(8)->get(),
             'iratesmore'=> DB::table('international_rates')->where([['type', '=', 'more'],['Symbol','!=','XBT']])->whereDate('created_at',$date)->take(71)->get(),
             'base_currency' =>$base_currency,
             'currencies' => DB::table('currencies_symbol')->get(),
-            'base_currency_rate' =>$base_currency_rate->Units_per_USD??"",
-            'usd_currency_rate' =>$usd_currency_rate->Units_per_USD??""
+            'base_currency_rate' =>$base_currency_rate->Units_per_USD,
+            'usd_currency_rate' =>$usd_currency_rate->Units_per_USD
         ];
+        
         // dd($base_currency_rate,$usd_currency_rate);
         // $headers = [
         //     'Content-Type' => 'application/json',

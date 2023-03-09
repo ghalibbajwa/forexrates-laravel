@@ -42,6 +42,7 @@ class internationalRatesController extends Controller
             $sym = substr($symbol, 3, 7);
             array_push($symbols, $sym);
         }
+        array_push($symbols, "USD");
 
         $currencys = [];
         foreach ($symbols as $smb) {
@@ -52,22 +53,24 @@ class internationalRatesController extends Controller
                 }
             }
         }
-
+    
         $curr_usd = [];
 
         foreach ($curs as $cu) {
             array_push($curr_usd, round((1 / $cu), 4));
         }
+        array_push($curr_usd,1);
 
         $urls = [];
         foreach ($symbols as $sym) {
             array_push($urls, ("https://www.forex.pk/flags/" . $sym . ".gif"));
         }
 
+
   
 
         $type = [];
-        for ($x = 0; $x < $co; $x++) {
+        for ($x = 0; $x < $co+1; $x++) {
             array_push($type, "major");
         }
 

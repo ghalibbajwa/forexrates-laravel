@@ -16,16 +16,17 @@ class APIController extends Controller
 {
     public function internationalRates(Request $request)
     {
-        
-      $d= $request->validate([
-            'Currency'          =>  'required|array',
-            'Symbol'            =>  'required|array',
-            'Units_per_USD'     =>  'required|array',
-            'USD_per_Unit'      =>  'required|array',
-            'url'               =>  'required|array',
-            'type'              =>  'required|array',
-        ]);
-       dd($d);
+        // dd($request->all());
+        // $request->validate([
+        //     'Currency'          =>  'required|array',
+        //     'Symbol'            =>  'required|array',
+        //     'Units_per_USD'     =>  'required|array',
+        //     'USD_per_Unit'      =>  'required|array',
+        //     'url'               =>  'required|array',
+        //     'type'              =>  'required|array',
+        // ]);
+       
+    //    dd($request->all());
         
         foreach ($request->Currency as $key => $currency) {
             $data = [

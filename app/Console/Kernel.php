@@ -27,7 +27,7 @@ class Kernel extends ConsoleKernel
     {
         
         $schedule->command('demo:cron')
-                 ->everyMinute();
+                 ->hourly();
         // $schedule->command('inspire')
         //          ->hourly();
     }   

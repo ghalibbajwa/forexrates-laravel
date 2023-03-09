@@ -44,6 +44,7 @@
                                         style="display: block;color: #000;font-weight: 400;margin-top: 11px;margin-bottom: 10px">Base
                                         Currency</label>
                                     <select name="base_currency" id="base_currency">
+                                        
                                         @foreach ($currencies as $currency)
                                             
                                         <option value="{{$currency->symbol}}" {{$base_currency == $currency->symbol ? 'selected' : null}}>{{$currency->symbol}} - {{$currency->country}}</option>
@@ -75,7 +76,9 @@
                     </form>
                 </div>
             </div>
+           
             <h5>Major Countries</h5>
+            
             <div class="exchange-table">
                 <table class="table">
                     <thead>
@@ -97,31 +100,42 @@
                         </tr>
                     </thead>
                     <tbody>
+                
                         @foreach ($iratesmajor as $key => $rate)
-                       
-                        <tr>
+                               
+                       <tr>
                             <td>
                                 <img src="{{url('').'/website_assets/img/flag/'.$rate->Symbol.'.gif'}}" class="box">&nbsp;&nbsp;
-                                {{ $rate->Currency}}
+                                {{ $rate->Currency }}
                             </td>
                             <td>
-                                {{ $rate->Symbol}}
+                            {{ $rate->Symbol     }}
                             </td>
                             <td>
-                                {{ round(number_format((float)(1 / round(number_format((float)($base_currency_rate / $rate->Units_per_USD), 4, '.', ''),4)), 4, '.', ''),4)}}
+                            {{ round(number_format((float)(1 / round(number_format((float)($base_currency_rate / ($rate->Units_per_USD)), 4, '.', ''),4)), 4, '.', ''),4)}}
+                                
+                                
                             </td>
                             <td>
-                                {{round(number_format((float)($base_currency_rate / $rate->Units_per_USD), 4, '.', ''),4)}}
+                                
+                                
+                            {{round(number_format((float)($base_currency_rate / ($rate->Units_per_USD)), 4, '.', ''),4)}}
+                              
                             </td>
                             <td>
-                                <a href="{{ route('detail_page_usd',[$rate->Symbol]) }}">
+                            <a href="{{ route('detail_page_usd',[$rate->Symbol]) }}">
                                     <img src="{{url('')}}/website_assets/img/chart-img/chart-1.png" alt="Image">
                                 </a>
+                                
+                            </td>
+                            <td>
+                                
                             </td>
                         </tr>
                         
                         @endforeach
                     </tbody>
+                  
                 </table>
             </div>
             <br>
@@ -147,6 +161,7 @@
                         </tr>
                     </thead>
                     <tbody>
+                        
                         @foreach ($iratesmore as $key => $rate)
                        
                         <tr>
