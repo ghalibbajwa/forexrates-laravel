@@ -16,7 +16,8 @@ class APIController extends Controller
 {
     public function internationalRates(Request $request)
     {
-        $request->validate([
+        
+      $d= $request->validate([
             'Currency'          =>  'required|array',
             'Symbol'            =>  'required|array',
             'Units_per_USD'     =>  'required|array',
@@ -24,6 +25,8 @@ class APIController extends Controller
             'url'               =>  'required|array',
             'type'              =>  'required|array',
         ]);
+       dd($d);
+        
         foreach ($request->Currency as $key => $currency) {
             $data = [
                 'Currency'          => $currency,

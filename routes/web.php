@@ -15,6 +15,8 @@ use Illuminate\Http\Request;
 
 Route::get('/', 'Website\HomeController@index')->name('home');
 
+Route::get('/getrates','APILayer\internationalRatesController@get_rates');
+
 Route::get('/converter', 'Website\HomeController@converter')->name('converter');
 
 Route::get('/about', 'Website\HomeController@about')->name('about');
